@@ -17,3 +17,9 @@
 .hundred-width {
     width: 100%;
 }
+no-decoration {
+    text-decoration: none;
+}
+.name-card:hover {
+    background: lightblue;
+}
