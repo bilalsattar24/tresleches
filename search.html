@@ -52,47 +52,33 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">CDP Filter</h5>
-              <div class="dropdown">
-                <button class="btn border-secondary dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown button
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="btn border-secondary dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown button
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="btn border-secondary dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown button
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="btn border-secondary dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown button
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </div>
-              <a href="#" class="btn btn-primary">Filter</a>
+
+              <div class="btn-group mb-2">
+                <button class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#">Select a Role <span class="caret"></span></button>
+                <ul id="roles" class="dropdown-menu">
+                  <li class="dropdown-item px-2" value="Professional">Professional</li>
+                  <li class="dropdown-item px-2" value="Architect">Architect</li>
+                  <li class="dropdown-item px-2" value="Leader">Leader</li>
+                  <li class="dropdown-item px-2" value="Player/Coach">Player/Coach</li>
+                  <li class="dropdown-item px-2" value="Advisor">Advisor</li>
+                </ul>
+              </div> <br>
+              <div class="btn-group mb-2">
+                <button id="cat2-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#" disabled>Select an Expectation<span class="caret"></span></button>
+                <ul id="cat2" class="dropdown-menu">
+                </ul>
+              </div> <br>
+              <div class="btn-group mb-2">
+                <button id="cat3-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#" disabled>Select a Category <span class="caret"></span></button>
+                <ul id="cat3" class="dropdown-menu">
+                </ul>
+              </div> <br>
+              <div class="btn-group mb-2">
+                <button id="cat4-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#" disabled>Select a CDP <span class="caret"></span></button>
+                <ul id="cat4" class="dropdown-menu">
+                </ul>
+              </div> <br>
+              <button href="#" class="btn btn-primary">Filter</button>
             </div>
           </div>
         </div>
@@ -101,7 +87,7 @@
             <div class="card-body">
               <h5 class="card-title">CDP Search</h5>
               <input type="text" class="form-control mb-1" placeholder="Search for CDP....">
-              <a href="#" class="btn btn-primary">Search</a>
+              <button href="#" class="btn btn-primary">Search</button>
             </div>
           </div>
         </div>
@@ -127,6 +113,7 @@
           </div>
       </div>
       </div>
+      <script src="src/search.js"></script>
   </body>
 
 </html>
