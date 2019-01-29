@@ -10,3 +10,10 @@
 .no-left {
     border-left: 0px;
 }
+.fins-title {
+    padding-top: 3px;
+    padding-bottom: 0px;
+}
+.hundred-width {
+    width: 100%;
+}
