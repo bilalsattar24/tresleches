@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -25,28 +26,11 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    
+                    <a href="/search.html" class="btn btn-outline-success my-2 my-sm-0 mr-1">Search</a>
+                    <a href="" class="btn btn-outline-danger my-2 my-sm-0">Logout</a>
                 </form>
             </div>
         </nav>
@@ -60,62 +44,85 @@
             <div class="col-4">
                 <div class="card">
                     <h1 class="text-center">CDP 1</h1>
-                    <div class="card-body">
-                      <ul>
-                        <li>Leadership</li>
-                        <li>Project leadership</li>
-                        <li>Estimating</li>
-                        <li>Estimates time to complete individual assignments</li>
-                      </ul>
+                    <div>
+                        <div class="card-body"
+                        <h5 class="card-title">Leadership</h5>
+                        <div>
+                            <li>Project leadership</li>
+                        </div>
+                        <div class="ml-2">
+                            <li>Estimating</li>
+                        </div>
+                        <div class="ml-3">
+                            <li>Estimates time to complete individual assignments</li>
+                        </div>
+                        </ul>
+                        </div>
+                        <div class="mt-3">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Pariveda Fins</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Discussions</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Marcelles Lowery</li>
-                      <li class="list-group-item">Tida Sooreechine</li>
-                      <li class="list-group-item">Bilal Sattar</li>
+                        <li class="list-group-item padding-3-20 first-fin">Marcelles Lowery</li>
+                        <li class="list-group-item padding-3-20">Tida Sooreechine</li>
+                        <li class="list-group-item padding-3-20">Bilal Sattar</li>
                     </ul>
-                    <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
+
+                </div>
             </div>
 
             <div class="col-4">
                 <div class="card">
                     <h1 class="text-center">CDP 2</h1>
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Architect</h5>
+                        <div>
+                            <li>Frameworks & Models</li>
+                        </div>
+                        <div class="ml-2">
+                            <li>System Components</li>
+                        </div>
+                        <div class="ml-3">
+                            <li>Identifies components of a known technical or functional model in detail</li>
+                        </div>
                     </div>
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Cras justo odio</li>
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item">Vestibulum at eros</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
                     </ul>
                     <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
                     </div>
-                  </div>
+                </div>
             </div>
 
             <div class="col-4">
                 <div class="card">
                     <h1 class="text-center">CDP 3</h1>
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Cras justo odio</li>
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item">Vestibulum at eros</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
                     </ul>
                     <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
