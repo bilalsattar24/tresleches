@@ -1,0 +1,12 @@
+.padding-3-20 {
+    padding: 3px 20px;
+}
+.first-fin {
+    border-top: 0px;
+}
+.active {
+    font-weight: bold;
+}
+.no-left {
+    border-left: 0px;
+}
