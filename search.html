@@ -86,8 +86,9 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">CDP Search</h5>
-              <input type="text" class="form-control mb-1" placeholder="Search for CDP....">
-              <button href="#" class="btn btn-primary">Search</button>
+              <datalist id="cdpList" class=""></datalist>
+              <input name="searchbar" id="searchbar" type="text" class="form-control mb-1" placeholder="Search for CDP...." list="cdpList">
+              <button id="search-btn" href="#" class="btn btn-primary" onclick="findFinsFromSearch();">Filter</button>
             </div>
           </div>
         </div>

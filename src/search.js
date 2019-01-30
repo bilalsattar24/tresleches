@@ -2,7 +2,7 @@ var profCat2 = ['Communication', 'Professionalism', 'Excellence'];
 var archCat2 = ['Problem Solving', 'Frameworks & Models', 'Thought Leadership'];
 var comCat3 = ['Writing', 'Speaking', 'Meetings', 'Listening', 'Expression', 'Effective use of time'];
 var frameCat3 = ['Using Frameworks', 'Systems Thinking', 'Feedback Loops', 'Design Principles'];
-writingCdps = [
+var writingCdps = [
   'Clearly and appropriately communicates ideas all correspondence',
   'Makes use of information-structuring techniques to clearly communicate ideas in all correspondence',
   'Adapts message to the preferred communication style of the stakeholders considering situational context and their perspectives',
@@ -14,7 +14,7 @@ writingCdps = [
   'Mentors others on Pariveda style',
   'Coaches others on Pariveda style',
   'Role model for Pariveda style'];
-designCdps = [
+var designCdps = [
   'Identifies design principles within assigned task',
   "Understands design principles related to team members' assignments",
   "Applies design principles across multiple problem / solutions to team members' assignments",
@@ -26,6 +26,14 @@ designCdps = [
   'Mentors others in the application of design principles across multiple problem / solutions under different business scenarios',
   'Coaches others in the application of design principles across multiple problem / solutions under different industry scenarios'];
 
+var predictiveList = writingCdps.concat(designCdps);
+var list = document.getElementById('cdpList');
+
+predictiveList.forEach(function(item){
+   var option = document.createElement('option');
+   option.value = item;
+   list.appendChild(option);
+});
 
 var expUl = document.getElementById('cat2');
 var catUl = document.getElementById('cat3');
@@ -47,7 +55,14 @@ var findFins = () => {
   var cdpToSearch = Object.create(curCdp);
   cdpToSearch.set();
   console.log(cdpToSearch);
+  //find fins with same cat4 CDP
+}
 
+var findFinsFromSearch = () => {
+  var cdpToSearch = Object.create(curCdp);
+  var val = document.getElementById('searchbar').value;
+  console.log(val);
+  //find fins with same cat4 CDP
 }
 
 $("ul").on("click", "li", function() {
@@ -56,6 +71,8 @@ $("ul").on("click", "li", function() {
   $(this).parents('.btn-group').find('.dropdown-toggle').val(selText);
   filter(selText);
 });
+
+
 
 var filter = (val) => {
   if(val === "Professional") {//lvl2
