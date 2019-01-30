@@ -54,8 +54,8 @@
               <h5 class="card-title">CDP Filter</h5>
 
               <div class="btn-group mb-2">
-                <button class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#">Select a Role <span class="caret"></span></button>
-                <ul id="roles" class="dropdown-menu">
+                <button id="cat1-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#">Select a Role <span class="caret"></span></button>
+                <ul class="dropdown-menu">
                   <li class="dropdown-item px-2" value="Professional">Professional</li>
                   <li class="dropdown-item px-2" value="Architect">Architect</li>
                   <li class="dropdown-item px-2" value="Leader">Leader</li>
@@ -78,7 +78,7 @@
                 <ul id="cat4" class="dropdown-menu">
                 </ul>
               </div> <br>
-              <button href="#" class="btn btn-primary">Filter</button>
+              <button id="filter-btn" href="#" class="btn btn-primary" onclick="findFins();" disabled>Filter</button>
             </div>
           </div>
         </div>
