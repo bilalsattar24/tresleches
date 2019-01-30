@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <title>Unity | Edit CDPs</title>
+  </head>
+  <body style= "background-color: #2D72C0">
+    <div>
+        <nav class="mb-3 navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img class="navbar-brand" width="30" height="25" src="images/unity_logo.png"></img>
+                Dashboard
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a href="/search.html" class="btn btn-outline-primary my-2 my-sm-0 mr-1">
+                        <i class="fas fa-user-tie"></i>
+                    </a>
+                    <a href="/search.html" class="btn btn-outline-primary my-2 my-sm-0 mr-1">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-danger my-2 my-sm-0">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <div id="container" class="container card border-secondary mt-5 mb-3 p-3" style="max-width: 40rem">
+            <div class="row text-Black">
+                <div class="col-md-8 offset-sm-2 text-center">
+                    <h1 class="display-4 mb-3">Edit CDPs</h1>
+                    <div class="btn-group mb-2">
+                      <button id="edit1-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#">Select a Role <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-item px-2" value="Professional">Professional</li>
+                        <li class="dropdown-item px-2" value="Architect">Architect</li>
+                        <li class="dropdown-item px-2" value="Leader">Leader</li>
+                        <li class="dropdown-item px-2" value="Player/Coach">Player/Coach</li>
+                        <li class="dropdown-item px-2" value="Advisor">Advisor</li>
+                      </ul>
+                    </div> <br>
+                    <div class="btn-group mb-2">
+                      <button id="edit2-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#" disabled>Select an Expectation<span class="caret"></span></button>
+                      <ul id="edit2" class="dropdown-menu">
+                      </ul>
+                    </div> <br>
+                    <div class="btn-group mb-2">
+                      <button id="edit3-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#" disabled>Select a Category <span class="caret"></span></button>
+                      <ul id="edit3" class="dropdown-menu">
+                      </ul>
+                    </div> <br>
+                    <div class="form-group">
+                      <label for="comment">Copy/Paste your CDP in here:</label>
+                      <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                    <input id="add" type="image" src="images/plus.png" style="max-width: 3rem" onclick="add();"/><br>
+                    <button type="submit" id="save-btn" href="dashboard.html" class="btn btn-primary" onclick="save();">Save</button>
+                </div>
+            </div>
+        </div>
+    <script src="src/edit.js"></script>
+  </body>
+</html>

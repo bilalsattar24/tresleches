@@ -52,7 +52,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">CDP Filter</h5>
-
+              <p>Use the filter to search for Fins by Role, Expectation, etc..</p>
               <div class="btn-group mb-2">
                 <button id="cat1-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#">Select a Role <span class="caret"></span></button>
                 <ul class="dropdown-menu">
@@ -73,12 +73,7 @@
                 <ul id="cat3" class="dropdown-menu">
                 </ul>
               </div> <br>
-              <div class="btn-group mb-2">
-                <button id="cat4-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#" disabled>Select a CDP <span class="caret"></span></button>
-                <ul id="cat4" class="dropdown-menu">
-                </ul>
-              </div> <br>
-              <button id="filter-btn" href="#" class="btn btn-primary" onclick="findFins();" disabled>Filter</button>
+              <button id="filter-btn" href="#" class="btn btn-primary" onclick="findFins();" disabled>Find Fellow Fins!</button>
             </div>
           </div>
         </div>
@@ -86,9 +81,10 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">CDP Search</h5>
+              <p>Use the searchbar to search for Fins within a specific Category.</p>
               <datalist id="cdpList" class=""></datalist>
-              <input name="searchbar" id="searchbar" type="text" class="form-control mb-1" placeholder="Search for CDP...." list="cdpList">
-              <button id="search-btn" href="#" class="btn btn-primary" onclick="findFinsFromSearch();">Filter</button>
+              <input name="searchbar" id="searchbar" type="text" class="form-control mb-1" placeholder="Search for Category..." list="cdpList">
+              <button id="search-btn" href="#" class="btn btn-primary" onclick="findFinsFromSearch();">Find Fellow Fins!</button>
             </div>
           </div>
         </div>
